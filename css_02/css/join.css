@@ -27,7 +27,7 @@ textarea, button, form {
  }
 
  ol>li::after{
-    content: " > ";
+    content: ">";
  }
 
  ol>li:last-child::after{
