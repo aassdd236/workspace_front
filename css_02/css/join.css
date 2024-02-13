@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, 
+input, fieldset, legend, p, select, table, th, td, tr, 
+textarea, button, form {
+    margin: 0px;
+    padding: 0px; 
+ }
+
+ body{
+    background-color: #808080;
+    font-family: "맑은 고딕";
+    font-size: 12px;
+ }
+
+ .content{
+    width: 600px;
+    background-color: #ffffff;
+ }
+
+.clearfix:before, .clearfix:after {display: block; content: ""; line-height: 0;}
+.clearfix:after {clear: both;}
+
+ ol>li{
+   list-style-type: none;
+   float: left;
+ }
+
+ ol>li::after{
+    content: " > ";
+ }
+
+ ol>li:last-child::after{
+    content: "";
+ }
+
+
+  /*타이틀*/
+  .content h3{
+    font-size: 18px;
+    font-weight: bold;
+ }
+
+ /*폼타이틀*/
+.content .form-group .form-text{
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/*input select textarea*/
+.content .form-group #txt-id{
+    width: 200px;
+    font-family: "맑은고딕";
+}
+
+.content .form-group #txt-pw{
+    width: 200px;
+    font-family: "맑은고딕";
+}
+
+.content .form-group #txt-name{
+    width: 200px;
+    font-family: "맑은고딕";
+}
+
+.content .form-group #txt-add{
+    width: 200px;
+    font-family: "맑은고딕";
+}
+
+.content .form-group #txt-add02{
+    font-family: "맑은고딕";
+    margin-top: 7px;
+    width: 400px;
+}
+
+.content .form-group #txt-content{
+    width: 400px;
+    height: 80px;
+}
+
+
+/*radio check*/
+.content .form-group input[type="radio"]{
+    font-family: "맑은고딕";
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.content .form-group input[type="checkbox"]{
+    font-family: "맑은고딕";
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.content .form-group span.form-text[for="self"] {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*버튼*/
+.content .btn-area{
+    padding: 10px 0px 10px 0px;
+    border-top: 2px solid #000000;
+    text-align: center;
+}
+
+.content .btn-area button{
+    width: 120px;
+    height: 30px;
+}
