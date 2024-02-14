@@ -8,7 +8,6 @@ h1, h2, h3, h4, h5, h6, input,
 fieldset, legend, p, select, 
 table, th, td, tr, textarea, 
 button, form{
-
     margin: 0px;
     padding: 0px;
 }
@@ -49,7 +48,9 @@ ul, ol{list-style-type: none;}
 #wrap{
     width: 1000px;
     margin: 0 auto;
+    background-color: #ffffff;
 }
+
 #wrap #header{
     padding: 10px 0px 10px 0px;
     border: 1px solid #dddddd;
@@ -58,15 +59,21 @@ ul, ol{list-style-type: none;}
 
 #wrap #nav{
     padding: 15px 0px 15px 0px;
-    border: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
 }
 
 #wrap #content{
     /*border: 1px solid #000000;*/
+    padding: 20px 10px 10px 10px;
+    background-color: #ffffff;
+    
 }
 
 #wrap #footer{
+    padding: 10px 10px 10px 10px;
     border: 1px solid #000000;
+    text-align: center;
+    background-color: #e7eaed;
 }
 
 /* header */
@@ -96,9 +103,70 @@ h1{
 }
 
 #nav ul>li{
-    width: 246px;
+    width: 250px;
     font-size: 20px;
     float: left;
     text-align: center;
     font-weight: bold;
+}
+
+/* content */
+#content #profile{
+    width: 300px;
+    float: left;
+    margin-right: 30px;
+}
+
+#content #greeting-box{
+    float: left;
+    font-size: 18px;
+}
+
+#content #greeting-box #greeting{
+    font-weight: bold;
+}
+
+/* footer */
+#footer p{
+    font-size: 15px;
+}
+
+/* content2 */
+#content2 div{
+   
+}
+
+#content2{
+    padding: 20px 0px 20px 0px;
+} 
+
+#content2 #aside{
+    width: 180px;
+    float: left;
+}
+
+#content2 #aside h2{
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #dddddd;
+    text-align: center;
+    line-height: 60px;
+}
+
+#content2 #aside ul{
+    width: 160px;
+}
+
+#content2 #aside ul>li{
+    margin-top: 5px;
+    padding: 8px 8px 8px 10px;
+    font-size: 15px;
+    border: 1px solid #a6a6a6;
+}
+
+#content2 #main{
+    width: 816px;
+    float: left;
 }
