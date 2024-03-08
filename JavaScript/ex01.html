@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="Ko">
+    <head>
+        <title>자바스크립트</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>기본데이터타입</h2>
+    </body>
+
+    <script>
+        window.console.log("aaa"); //window 생략 가능
+        console.log("==================================");
+        console.log("#데이터타입 확인");
+        console.log(typeof 1);
+        console.log(typeof 1.5); //실수형 구분없이 모두 number
+        console.log(typeof '한'); //char형도 String으로 출력
+        console.log(typeof "안녕하세요");
+        console.log(typeof (6>5));
+        console.log(typeof (6<5)); 
+
+        console.log("==================================");
+        console.log("#number형");
+        console.log(13+5);
+        console.log(13-5);
+        console.log(13*5);
+        console.log(13/5); //몫(소숫점 계산 ㅇ)
+        console.log(13%5); //나머지
+
+        console.log(13+5.2);
+        console.log(5+3*2);
+
+        console.log("==================================");
+        console.log("#String형");
+        console.log("동해물과 백두산이");
+        console.log('동해물과 백두산이'); // "" 또는 '' 하나로 통일해서 적기
+
+        console.log("동해물과 \"백두산\"이");
+        console.log('동해물과 "백두산"이'); // "" 출력하는 방법
+
+        console.log('동해물과 \'백두산\'이');
+        console.log("동해물과 '백두산'이"); // '' 출력하는 방법
+
+        console.log("동해물과 \n백두산이");
+        console.log("동해물과 \t백두산이");
+        console.log("동해물과 \\백두산이"); // \하나 출력
+
+        console.log("==================================");
+        console.log("#boolean형");
+        console.log(50>100);
+        console.log(50<100);
+
+        console.log("==================================");
+        console.log("# && || 연산자");
+        console.log( (5>3) && (5<3) );
+        console.log( (5>3) || (5<3) );
+        console.log( !((5>3) || (5<3)) );
+    </script>
+
+</html>
