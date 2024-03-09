@@ -1,30 +1,23 @@
 <!DOCTYPE html>
-<html lang="Ko">
+<html lang="ko">
     <head>
         <title>자바스크립트</title>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8>">    
     </head>
     <body>
         <h1>자바스크립트</h1>
         <h2>소제목</h2>
-
     </body>
     <script>
-        /*
-        public int sum(int a, int b){
-            int sum=a+b;
-            return sum;
-        }*/
-        //정의
-        function plus(a,b){
-            console.log("더하기메소드");
-            let sum = a + b;
-            return sum;
+        //별표찍기
+        for(let dan=0; dan<=4; dan++){
+            for(let i=0; i<=dan; i++){
+                document.write("*");
+            }
+            document.write("<br>");
         }
 
-        //사용
-        let num = plus(3, 600);
-        console.log(num);
 
     </script>
+
 </html>
