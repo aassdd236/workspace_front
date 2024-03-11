@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="Ko">
+    <head>
+        <title>자바스크립트</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+
+    </body>
+    <script>
+        // personList 만들기
+        // 배열 만들기
+        let personList = [];
+
+        // vo1 만들기
+        let personVo1 = {
+            no: 1,
+            name: "박명수",
+            hp: "010-2222-3333",
+            company: "02-222-3333"
+        };
+        console.log(personVo1);
+
+        // vo2 만들기
+        let personVo2 = {};
+        personVo2.no = 2;
+        personVo2.name = "유재석";
+        personVo2.hp = "010-0000-0000";
+        personVo2.company = "031-000-000";
+        console.log(personVo2);
+
+        // vo3 만들기
+        let personVo3 = {
+            no: 3,
+            name: "서장훈",
+        };
+        personVo3.hp = "010-3333-0000";
+        personVo3.company = "02-333-3333";
+        console.log(personVo3);
+
+        // 배열에 vo 추가하기
+        personList.push(personVo1);
+        personList.push(personVo2);
+        personList.push(personVo3);
+        console.log(personList);
+
+        //출력
+        console.log(personList[1].name);
+
+    </script>
+</html>

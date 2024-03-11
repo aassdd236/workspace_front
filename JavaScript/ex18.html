@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="Ko">
+    <head>
+        <title>자바스크립트</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>자바스크립트</h1>
+        <h2>소제목</h2>
+
+    </body>
+    <script>
+        // 코어 객체
+        let date = new Date();
+        console.log(date);
+
+        let year = date.getFullYear();
+        let month = date.getMonth() + 1;
+        let day = date.getDate();
+        let hour = date.getHours();
+        let minute = date.getMinutes();
+        let second = date.getSeconds();
+        
+        console.log(year);
+        console.log(month);
+        console.log(day);
+        console.log(hour);
+        console.log(minute);
+        console.log(second);
+        
+        let date2 = new Date(0);
+        console.log(date2);
+
+        console.log("================================");
+
+        // 문자열
+        let str = "Hello";
+        console.log(str.length);
+        console.log("Hello".length);
+
+        console.log("990101-1234567".charAt(7));
+
+        console.log("================================");
+
+        // 숫자
+        let num01 = "100";
+        // let no = Number(num01); // 숫자로 바꿈
+        let no = parseInt(num01); // 정수로 바꿈
+        let num02 = 5;
+        let sum = no+num02;
+        console.log(sum)
+
+        console.log("================================");
+
+        //수학
+        let pi = Math.PI;
+        console.log(pi);
+
+        console.log(Math.abs(-123)); // 절대값
+        console.log(Math.ceil(123.456)); // 올림
+        console.log(Math.floor(123.456)); // 내림
+        console.log(Math.round(123.456)); // 반올림
+        console.log(Math.random()); // 0 <=    < 1
+    </script>
+</html>
