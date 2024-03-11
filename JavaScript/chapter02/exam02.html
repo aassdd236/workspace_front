@@ -25,7 +25,26 @@
 </body>
 
 <script>
+	//DOM tree가 완성되었을 때
+	document.addEventListener("DOMContentLoaded", function(){
+		// li 
+		let liTags = document.getElementsByTagName("li");
+		console.log(liTags);
+		liTags[0].style.color = "#ff0000";
 
+		// p 
+		let pTags = document.getElementsByTagName("p");
+		console.log(pTags);
+		for (let i=0; i<pTags.length; i++){
+			pTags[i].style.color = "#0000ff";
+		}
+
+		// h1 색 바꾸기, 배열유사체로 리턴
+		let h1Tag = document.getElementsByTagName("h1");
+		console.log(h1Tag);
+		h1Tag[0].style.color = "#00ff00"; // 하나라도 배열로 생각 > [0] 넣기
+
+	});
 
 </script>
 
