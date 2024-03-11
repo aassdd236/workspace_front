@@ -1,8 +1,19 @@
 @charset "UTF-8";
 
-#contents #main .search{
+#contents2 #main #sea{
+    height: 20px;
+    vertical-align: center;
+}
+
+#contents2 #main .btn{
+    height: 25px;
+    vertical-align: center;
+}
+
+#contents2 #main .search{
     float: right;
     text-align: right;
+    margin-bottom: 7px;
 }
 
 table{
@@ -29,3 +40,27 @@ table>tbody>tr>td, table>thead>tr>th{
 .txt-left{
     text-align: left;
 }
+
+#page{
+    text-align: center;
+}
+
+#page ol{
+    width: 42%;
+    margin: 5px auto 0;
+}
+
+#page ol>li{
+    float: left;
+    margin: 0px 10px 0px 10px;
+}
+
+#write{
+    float: right;    
+}
+
+#wri-btn{
+    margin: 10px 0px 10px 0px;
+    padding: 2px 6px 2px 6px;
+}
+

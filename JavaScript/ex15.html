@@ -10,6 +10,7 @@
 
     </body>
     <script>
+<<<<<<< HEAD
         //객체정의 - 생성과 함께 초기화(값이 활성화되어 있을 경우)
         let guestbookVo = {
             name: "정우성",
@@ -17,10 +18,19 @@
             content: "방문합니당.",
             showInfo: function(a, b){
                 console.log("# " + this.name + ", " + this.pw + ", " + this.content);
+=======
+        let guestbookVo = { 
+            name: "이예슬",
+            password: "1234",
+            content: "안녕하세요",
+            showInfo: function(){
+                console.log(this.name+", "+this.password+", "+this.content)
+>>>>>>> 0da1d458292bff5d0e9300a34ef8e65e919dc28a
             }
         };
 
         console.log(guestbookVo.name);
+<<<<<<< HEAD
         console.log(guestbookVo.pw);
         console.log(guestbookVo.content);
         console.log(guestbookVo);
@@ -52,5 +62,8 @@
         console.log(guestVo);
         guestVo.showInfo();
 
+=======
+        guestbookVo.showInfo();
+>>>>>>> 0da1d458292bff5d0e9300a34ef8e65e919dc28a
     </script>
 </html>
