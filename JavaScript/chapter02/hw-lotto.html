@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Insert title here</title>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Insert title here</title>
+        <style>
 
-    <style>
-
-    </style>
-
-
-</head>
-
-<body>
-
-    <table border="1" width="600px">
-
-        <tbody>
-            <colgroup>
-                <col style="width: 100px;">
-                <col style="width: 100px;">
-                <col style="width: 100px;">
-                <col style="width: 100px;">
-                <col style="width: 100px;">
-                <col style="width: 100px;">
-            </colgroup>
-            <tr>
-                <td>?</td>
-                <td>?</td>
-                <td>?</td>
-                <td>?</td>
-                <td>?</td>
-                <td>?</td>
-            </tr>
-            <tr>
-                <td colspan="6">
-                    <button id="btnMakeNo" type="button">등록</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-
-</body>
-
-<script>
+        </style>
 
 
+    </head>
 
-</script>
+    <body>
 
+        <table border="1" width="600px">
+
+            <tbody>
+                <colgroup>
+                    <col style="width: 100px;">
+                    <col style="width: 100px;">
+                    <col style="width: 100px;">
+                    <col style="width: 100px;">
+                    <col style="width: 100px;">
+                    <col style="width: 100px;">
+                </colgroup>
+                <tr id="lotto">
+                    <td>?</td>
+                    <td>?</td>
+                    <td>?</td>
+                    <td>?</td>
+                    <td>?</td>
+                    <td>?</td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <button id="btnMakeNo" type="button">등록</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+    </body>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            let btnMakeNo = document.querySelector("#btnMakeNo");
+            btnMakeNo.addEventListener("click", function(){
+                let tdTag = document.querySelectorAll("#lotto>td");
+                let num = [];
+
+                for(let i = 0; i < tdTag.length; i++){
+                    num[i] = Math.floor((Math.random() * 45) + 1);
+                    for(let j = 0; j < i; j++){
+                        if(num[i] == num[j]){
+                            i--;
+                        }
+                    }
+                }
+
+                for(let i = 0; i < tdTag.length; i++){
+                    tdTag[i].textContent = num[i];
+                }
+            });
+
+        });
+    </script>
 </html>

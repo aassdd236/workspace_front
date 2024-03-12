@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+
+    <style>
+        
+    </style>
+
+
+    </head>
+
+    <body>
+
+        <ul>
+            <li>첫번째</li>
+            <li>두번째</li>
+            <li>세번째</li>
+            <li>네번째</li>
+            <li>다섯번째</li>
+            <li>여섯번째</li>
+        </ul>
+
+        <button id="front" type="button" >앞에 추가</button>
+        <button id="back" type="button" >뒤에 추가</button>
+
+    </body>
+    <script>
+        //DOM tree가 생성되었을 때
+        document.addEventListener("DOMContentLoaded", function(){
+            
+            let ulTag = document.querySelector("ul");
+
+            //앞에 추가 버튼을 클릭할 때
+            let front = document.querySelector("#front");
+            front.addEventListener("click", function(){
+                let str = "<li>앞에 추가된 아이템입니다</li>";
+                ulTag.insertAdjacentHTML("afterbegin", str);
+            });
+
+            //뒤에 추가 버튼을 클릭할 때
+            let back = document.querySelector("#back");
+            back.addEventListener("click", function(){
+                let str = "<li>뒤에 추가된 아이템입니다</li>";
+                ulTag.insertAdjacentHTML("beforeend", str);
+            });
+
+        });
+            
+    </script>
+</html>

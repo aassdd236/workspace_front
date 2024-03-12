@@ -23,6 +23,32 @@
 </body>
 
 <script>
+    //DOM tree가 완성될 때
+    document.addEventListener("DOMContentLoaded", function(){
+        //더하기 버튼 클릭했을 때
+        let btnPlus = document.querySelector("#btnPlus");
+        btnPlus.addEventListener("click", function(){
+            console.log("클릭");
+            let left = document.querySelector("#left");
+            let right = document.querySelector("#right");
+
+            let leftVal = parseInt(left.value);
+            let rightVal = parseInt(right.value);
+
+            let sum = leftVal + rightVal;
+            console.log(sum); 
+
+            let display = document.querySelector("#display");
+            display.textContent = sum;
+
+            left.value = "";
+            right.value = "";
+
+            
+        });
+
+
+    });
 
 </script>
 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+
+    <style>
+        
+    </style>
+
+
+    </head>
+
+    <body>
+
+        <ul>
+            <li>첫번째</li>
+            <li>두번째</li>
+            <li>세번째</li>
+            <li>네번째</li>
+            <li>다섯번째</li>
+            <li>여섯번째</li>
+            <li>일곱번째</li>
+            <li>여덟번째</li>
+            <li>아홉번째</li>
+            <li>열번째</li>
+        </ul>
+    </body>
+    <script>
+        //DOM tree가 생성되었을 때
+        document.addEventListener("DOMContentLoaded", function(){
+            let liTags = document.querySelectorAll("li");
+
+            for(let i=0; i<liTags.length; i++){
+                liTags[i].addEventListener("click", function(){
+                    //this 🡪 이벤트 리스너가 붙어 있는 그 요소
+                    //event.target 🡪 사용자가 실제로 클릭한 그 요소
+                    console.log(i+1+"번 클릭");
+
+                    //this.remove(); //줄까지 삭제
+                    //this.textContent=""; //자리는 유지하고 내용만 삭제
+                    //event.target.remove(); //삭제
+                    event.target.textContent=""; //자리 유지
+
+                });
+            }
+            
+
+
+
+        });
+            
+    </script>
+</html>

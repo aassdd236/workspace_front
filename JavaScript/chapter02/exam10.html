@@ -41,7 +41,7 @@
 </head>
 
 <body>
-	<div class="box-red bold 50px">
+	<div class="box-red size50">
 		학교종이 땡땡땡<br>
 		어서모이자<br>
 		선생님이 우리를<br>
@@ -52,7 +52,25 @@
 </body>
 
 <script>
+	document.addEventListener("DOMContentLoaded", function(){
+		let div = document.querySelector("div");
+		console.log(div.className);
+		console.log(div.classList);
 
+		//추가
+		div.classList.add("bold");
+
+		//삭제
+		div.classList.remove("size50");
+
+		//변경
+		div.classList.remove("box-red");
+		div.classList.add("box-blue");
+
+		div.classList.replace("box-blue", "box-red");
+
+		
+	});
 	
 </script>
 
