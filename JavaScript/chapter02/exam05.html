@@ -68,21 +68,46 @@
 		let tag06 = document.querySelector("a");
 		console.log(tag06);
 
+		//기타속성
+		//<input id="txt-userId" class="form-txt" type="text" name="userId" value="jung" placeholder="아이디를 입력해주세요">
 		let tag07 = document.querySelector("#txt-userId");
 		console.log(tag07);
 		console.log(tag07.id);
 		console.log(tag07.tagName);
 		console.log(tag07.className);
+
 		console.log(tag07.type);
 		console.log(tag07.name);
-		console.log(tag0.placeholder);
-
-		//기타 속성
+		console.log(tag07.value);
+		console.log(tag07.placeholder);
+		
+		
+		console.log("============================================================");
+		
+		//기타속성
+		//<a class="box red" href="https://www.naver.com" target="_blank">네이버</a>
 		let tag08 = document.querySelector("a");
 		console.log(tag08);
+		console.log(tag08.id);
+		console.log(tag08.tagName);
+		console.log(tag08.className);
 		console.log(tag08.href);
-
+		console.log(tag08.target);
 		
+		console.log(tag08.innerHTML);
+		console.log(tag08.textContent);
+
+
+		//  <h1>자바<strong>스크립트</strong></h1>
+		let tag09 = document.querySelector("h1");
+		console.log(tag09);
+		console.log(tag09.innerHTML);
+		console.log(tag09.textContent);
+
+		let tag10 = document.querySelectorAll("li");
+		console.log(tag10);
+		console.log(tag10[0].innerHTML);
+		console.log(tag10[0].textContent);
 	})
 
 
