@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+
+    <style>
+        ul{
+            width: 200px;
+            padding: 20px;
+            background-color: #00ffff;
+        }
+
+        li{
+            border: 1px solid #000000;
+        }
+
+    </style>
+
+
+    </head>
+
+    <body>
+
+        <ul>
+            <li>첫번째</li>
+            <li>두번째</li>
+            <li>세번째</li>
+            <li>네번째</li>
+            <li>다섯번째</li>
+        </ul>
+        <button id="btnAfter" type="button">뒤에 추가</button>
+    </body> 
+    <script>
+        //DOM tree가 생성되었을 때
+        document.addEventListener("DOMContentLoaded", function(){
+            let btnAfter = document.querySelector("#btnAfter");
+            console.log(btnAfter);
+
+            //뒤에추가 버튼 클릭시
+            btnAfter.addEventListener("click", function(){
+
+                let ulTag = document.querySelector("ul");
+                console.log(ulTag);
+
+                let str = "<li>뒤에 추가된 아이템</li>"
+                ulTag.insertAdjacentHTML("beforeend", str);
+
+            });
+
+            //ul요소를 클릭했을 때의 기능을 li요소에 위임
+            let ulTag = document.querySelector("ul");
+            ulTag.addEventListener("click", function(event){
+                console.log("클릭");
+                console.log(this); // ul
+                console.log(event.target); // li
+                console.log(event.target.tagName); // li tag name
+
+                //실제 클릭한 곳이 li 요소면 아래 코드 실행
+                if(event.target.tagName == "LI"){
+                    //event.target.textContent="";
+                    event.target.remove();
+                }
+
+            });
+
+            /*
+            //li 요소를 클릭했을 때
+            let liTags = document.querySelectorAll("li");
+            console.log(liTags);
+            for(let i=0; i<liTags.length; i++){
+                liTags[i].addEventListener("click", function(){
+                    console.log("클릭");
+                });
+            }*/
+
+
+        });
+            
+    </script>
+</html>
